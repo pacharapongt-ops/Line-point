@@ -1,0 +1,14 @@
+
+liff.init({ liffId: "2009624055-e2ftGMgR" })
+  .then(() => {
+    if (liff.isLoggedIn()) {
+
+      liff.getProfile().then(profile => {
+        const userId = profile.userId;
+        console.log("User ID:", userId);
+      
+      });
+    } else {
+      liff.login();
+    }
+  });
