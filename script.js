@@ -1,7 +1,7 @@
 async function main() {
     try {
         // เปลี่ยน YOUR_LIFF_ID เป็นไอดีที่คุณได้จาก LINE Developers Console
-        await liff.init({ liffId: "YOUR_LIFF_ID" });
+        await liff.init({ liffId: "2009624055-e2ftGMgR" });
 
         if (liff.isLoggedIn()) {
             getUserProfile();
